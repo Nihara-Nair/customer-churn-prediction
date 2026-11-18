@@ -1,0 +1,34 @@
+{
+  "rows": 7043,
+  "churn_rate_pct": 26.54,
+  "churn_rate_by_Contract": {
+    "Month-to-month": 42.7,
+    "One year": 11.3,
+    "Two year": 2.8
+  },
+  "churn_rate_by_InternetService": {
+    "Fiber optic": 41.9,
+    "DSL": 19.0,
+    "No": 7.4
+  },
+  "churn_rate_by_PaymentMethod": {
+    "Electronic check": 45.3,
+    "Mailed check": 19.1,
+    "Bank transfer (automatic)": 16.7,
+    "Credit card (automatic)": 15.2
+  },
+  "churn_rate_by_PaperlessBilling": {
+    "Yes": 33.6,
+    "No": 16.3
+  },
+  "churn_rate_by_SeniorCitizen": {
+    "Yes": 41.7,
+    "No": 23.6
+  },
+  "churn_rate_by_tenure": {
+    "0-12": 47.4,
+    "13-24": 28.7,
+    "25-48": 20.4,
+    "49-72": 9.5
+  }
+}

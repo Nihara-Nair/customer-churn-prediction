@@ -1,0 +1,115 @@
+{
+  "dataset": {
+    "rows": 7043,
+    "churn_rate": 0.2653698707936959,
+    "n_train": 5634,
+    "n_test": 1409,
+    "source_file": "telco_churn.csv"
+  },
+  "settings": {
+    "seed": 42,
+    "cv_folds": 5,
+    "test_size": 0.2,
+    "beta": 1.0,
+    "class_imbalance_handling": "class weights",
+    "model_selection": "best CV ROC-AUC on train split"
+  },
+  "best_model": "Gradient Boosting",
+  "test_metrics_tuned_threshold": {
+    "threshold": 0.5748,
+    "roc_auc": 0.8443643597096282,
+    "pr_auc": 0.661116233703863,
+    "accuracy": 0.7679205110007097,
+    "precision": 0.5469061876247505,
+    "recall": 0.732620320855615,
+    "f1": 0.6262857142857143,
+    "tn": 808,
+    "fp": 227,
+    "fn": 100,
+    "tp": 274
+  },
+  "test_metrics_threshold_0.5": {
+    "threshold": 0.5,
+    "roc_auc": 0.8443643597096282,
+    "pr_auc": 0.661116233703863,
+    "accuracy": 0.7430801987224982,
+    "precision": 0.5102040816326531,
+    "recall": 0.8021390374331551,
+    "f1": 0.6237006237006237,
+    "tn": 747,
+    "fp": 288,
+    "fn": 74,
+    "tp": 300
+  },
+  "top_20pct_capture": {
+    "fraction": 0.2,
+    "captured_churners": 0.5080213903743316,
+    "lift": 2.5401069518716577
+  },
+  "top_features": [
+    "Contract",
+    "tenure",
+    "InternetService",
+    "OnlineSecurity",
+    "MonthlyCharges"
+  ],
+  "comparison": [
+    {
+      "model": "Logistic Regression",
+      "cv_roc_auc": 0.8462258479748301,
+      "best_params": {
+        "model__C": 10
+      },
+      "threshold": 0.5751,
+      "roc_auc": 0.8407992973210364,
+      "pr_auc": 0.6270559896050537,
+      "accuracy": 0.7622427253371186,
+      "precision": 0.5384615384615384,
+      "recall": 0.7299465240641712,
+      "f1": 0.619750283768445,
+      "tn": 801,
+      "fp": 234,
+      "fn": 101,
+      "tp": 273
+    },
+    {
+      "model": "Random Forest",
+      "cv_roc_auc": 0.8475120801275189,
+      "best_params": {
+        "model__max_depth": 10,
+        "model__min_samples_leaf": 10
+      },
+      "threshold": 0.518,
+      "roc_auc": 0.8435273450618719,
+      "pr_auc": 0.653093345263087,
+      "accuracy": 0.7679205110007097,
+      "precision": 0.5449330783938815,
+      "recall": 0.7620320855614974,
+      "f1": 0.6354515050167224,
+      "tn": 797,
+      "fp": 238,
+      "fn": 89,
+      "tp": 285
+    },
+    {
+      "model": "Gradient Boosting",
+      "cv_roc_auc": 0.8480737722829416,
+      "best_params": {
+        "model__learning_rate": 0.05,
+        "model__max_depth": 3,
+        "model__max_iter": 150
+      },
+      "threshold": 0.5748,
+      "roc_auc": 0.8443643597096282,
+      "pr_auc": 0.661116233703863,
+      "accuracy": 0.7679205110007097,
+      "precision": 0.5469061876247505,
+      "recall": 0.732620320855615,
+      "f1": 0.6262857142857143,
+      "tn": 808,
+      "fp": 227,
+      "fn": 100,
+      "tp": 274
+    }
+  ]
+}

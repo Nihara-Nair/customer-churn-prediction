@@ -1,0 +1,6 @@
+RESUME BULLETS (auto-generated from your real run, so every number is true for your results)
+
+Customer Churn Prediction | Python, pandas, scikit-learn, matplotlib, Streamlit
+- Built an end-to-end churn prediction pipeline on 7,043 telecom customer records, comparing Logistic Regression, Random Forest and Gradient Boosting with 5-fold cross-validation; the best model (Gradient Boosting) reached 0.84 ROC-AUC and 73% recall on a held-out test set.
+- Addressed class imbalance (27% churn) with class weights and out-of-fold threshold tuning; the top 20% highest-risk customers captured 51% of all churners (2.5x lift).
+- Identified key churn drivers through EDA and permutation importance (Contract, tenure, InternetService) and built a Streamlit app for real-time churn risk scoring.
